@@ -2,65 +2,67 @@ package models;
 
  public class Math {
 
-    private int x;
+    private double x;
 
-    private int y;
+    private double y;
 
-    private int a;
+    private double a;
 
-    private int b;
+    private double b;
 
-    private int c;
+    private double c;
 
     public Math(){}
 
-    public Math(int x, int y){
-
+    public Math(double x, double y){
+        this.setX(x);
+        this.setY(y);
     }
 
-    public Math(int a, int b, int c){
-
+    public Math(double a, double b, double c){
+        this.setA(a);
+        this.setB(b);
+        this.setC(c);
     }
 
 
+     public double getX() {
+         return x;
+     }
 
-    public int getC() {
-        return c;
-    }
+     public void setX(double x) {
+         this.x = x;
+     }
 
-    public void setC(int c) {
-        this.c = c;
-    }
+     public double getY() {
+         return y;
+     }
 
-    public int getB() {
-        return b;
-    }
+     public void setY(double y) {
+         this.y = y;
+     }
 
-    public void setB(int b) {
-        this.b = b;
-    }
+     public double getA() {
+         return a;
+     }
 
-    public int getA() {
-        return a;
-    }
+     public void setA(double a) {
+         this.a = a;
+     }
 
-    public void setA(int a) {
-        this.a = a;
-    }
+     public double getB() {
+         return b;
+     }
 
-    public int getY() {
-        return y;
-    }
+     public void setB(double b) {
+         this.b = b;
+     }
 
-    public void setY(int y) {
-        this.y = y;
-    }
+     public double getC() {
+         return c;
+     }
 
-    public int getX() {
-        return x;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-}
+     public void setC(double c) {
+         this.c = c;
+     }
+ }

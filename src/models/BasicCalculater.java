@@ -1,4 +1,6 @@
 package models;
 
-public class BasicCalculater {
+public class BasicCalculater extends Math {
+
+    public double add()
 }
