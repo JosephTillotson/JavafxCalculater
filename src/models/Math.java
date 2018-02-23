@@ -1,6 +1,6 @@
 package models;
 
-abstract public class Math {
+ public class Math {
 
     private int x;
 
@@ -11,6 +11,18 @@ abstract public class Math {
     private int b;
 
     private int c;
+
+    public Math(){}
+
+    public Math(int x, int y){
+
+    }
+
+    public Math(int a, int b, int c){
+
+    }
+
+
 
     public int getC() {
         return c;
