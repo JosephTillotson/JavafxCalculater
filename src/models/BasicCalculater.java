@@ -2,7 +2,7 @@ package models;
 
 public class BasicCalculater extends MyMath {
 
-    BasicCalculater(double x, double y){
+    public BasicCalculater(double x, double y){
         super(x,y);
     }
 
@@ -10,7 +10,7 @@ public class BasicCalculater extends MyMath {
         return super.getX()+super.getY();
     }
 
-    private double multiply(){
+    public double multiply(){
         return super.getX()*super.getY();
     }
 
