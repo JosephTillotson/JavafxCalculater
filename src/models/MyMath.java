@@ -14,6 +14,10 @@ package models;
 
     public MyMath(){}
 
+    public MyMath(double x){
+        this.setX(x);
+    }
+
     public MyMath(double x, double y){
         this.setX(x);
         this.setY(y);
