@@ -1,6 +1,6 @@
 package models;
 
- public class Math {
+ public class MyMath {
 
     private double x;
 
@@ -12,14 +12,14 @@ package models;
 
     private double c;
 
-    public Math(){}
+    public MyMath(){}
 
-    public Math(double x, double y){
+    public MyMath(double x, double y){
         this.setX(x);
         this.setY(y);
     }
 
-    public Math(double a, double b, double c){
+    public MyMath(double a, double b, double c){
         this.setA(a);
         this.setB(b);
         this.setC(c);
