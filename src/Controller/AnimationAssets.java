@@ -1,5 +1,3 @@
-package Controller;
-
 import com.jfoenix.controls.JFXHamburger;
 
 import com.jfoenix.transitions.hamburger.HamburgerBasicCloseTransition;
