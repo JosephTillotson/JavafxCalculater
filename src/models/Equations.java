@@ -1,9 +1,11 @@
 package models;
 
+import Exceptions.ImagenaryNumberException;
+
 public class Equations {
 
-   BasicCalculater bs=new BasicCalculater();
-   Schientific sc= new Schientific();
+   private BasicCalculater bc=new BasicCalculater();
+   private Schientific sc= new Schientific();
 
     public double standardeq(double a, double x, double b, double y){
 
@@ -23,9 +25,9 @@ public class Equations {
         double xanswer;
         double yanswer;
         xanswer= x2-x1;
-        xanswer=bs.exponents(xanswer, 2);
+        xanswer=bc.exponents(xanswer, 2);
         yanswer=y2-y1;
-        yanswer=bs.exponents(yanswer, 2);
+        yanswer=bc.exponents(yanswer, 2);
         answer=xanswer+yanswer;
         return sc.squareroot(answer);
     }
@@ -34,4 +36,18 @@ public class Equations {
         return "("+(x1+x2)/2+","+(y1+y2)/2+")";
     }
 
+    public double[] QuadraticFormula(double a,double b, double c){
+        double[] answer= new double[2];
+        double square;
+        double plus;
+        double minus;
+        square= bc.exponents(b,2)-4*a*c;
+        if (square<0){
+            throw new ImagenaryNumberException("cant squareroot a imagenary number");
+        }
+        square=sc.squareroot(square);
+        answer[0]=(-b+square)/(2*a);
+        answer[1]=(-b-square)/(2*a);
+        return answer;
+    }
 }
