@@ -24,7 +24,6 @@ public class Main {
         double x = 2;
         double y = 3;
 
-
         //launch(args);
     }
 }

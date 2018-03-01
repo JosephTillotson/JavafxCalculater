@@ -5,6 +5,8 @@ import static java.lang.StrictMath.cos;
 
 public class Schientific extends MyMath{
 
+    public Schientific(){}
+
     public Schientific(double x){
         super(x);
     }
