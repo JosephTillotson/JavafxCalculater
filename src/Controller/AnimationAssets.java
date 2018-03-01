@@ -1,3 +1,5 @@
+package Controller;
+
 import com.jfoenix.controls.JFXHamburger;
 
 import com.jfoenix.transitions.hamburger.HamburgerBasicCloseTransition;
@@ -19,7 +21,7 @@ public class AnimationAssets  extends Application implements Initializable {
         Application.launch(AnimationAssets.class,args);
     }
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(this.getClass().getResource("/Resources/sample.fxml"));
+        Parent root = FXMLLoader.load(this.getClass().getResource("/Resources/MaterialCalculator.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setTitle("Material Calculator");
         primaryStage.setScene(scene);
