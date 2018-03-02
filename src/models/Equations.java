@@ -50,4 +50,16 @@ public class Equations {
         answer[1]=(-b-square)/(2*a);
         return answer;
     }
+
+    public double equationCircle(double x, double h, double y, double k){
+        double square;
+        double square1;
+        double answer;
+        square= x-h;
+        square=bc.exponents(square,2);
+        square1=y-k;
+        square1=bc.exponents(square1,2);
+        answer=square+square1;
+        return sc.squareroot(answer);
+    }
 }
