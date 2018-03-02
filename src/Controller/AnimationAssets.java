@@ -1,5 +1,6 @@
 package Controller;
 
+import com.jfoenix.controls.JFXDrawer;
 import com.jfoenix.controls.JFXHamburger;
 
 import com.jfoenix.transitions.hamburger.HamburgerBasicCloseTransition;
@@ -21,7 +22,7 @@ public class AnimationAssets  extends Application implements Initializable {
         Application.launch(AnimationAssets.class,args);
     }
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(this.getClass().getResource("/Resources/sample.fxml"));
+        Parent root = FXMLLoader.load(this.getClass().getResource("/Resources/MaterialCalculator.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setTitle("Material Calculator");
         primaryStage.setScene(scene);
@@ -29,6 +30,9 @@ public class AnimationAssets  extends Application implements Initializable {
 
 
     }
+
+    @FXML
+    private JFXDrawer LeftDrawer;
 
     @FXML
     private JFXHamburger ham;
@@ -40,6 +44,12 @@ public class AnimationAssets  extends Application implements Initializable {
         ham.addEventHandler(MouseEvent.MOUSE_CLICKED, (e)->{
             transition.setRate(transition.getRate()*-1);
             transition.play();
+
+            if(LeftDrawer.isShown()){
+                LeftDrawer.close();
+            }else
+                LeftDrawer.open();
+
         });
     }
 
