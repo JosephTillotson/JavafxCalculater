@@ -1,11 +1,13 @@
 package Test;
 
+import Exceptions.ImagenaryNumberException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import models.BasicCalculater;
+import models.Equations;
 import models.Schientific;
 
 public class Main {
@@ -21,8 +23,8 @@ public class Main {
 
 
     public static void main(String[] args) {
-        double x = 2;
-        double y = 3;
+
+
 
         //launch(args);
     }

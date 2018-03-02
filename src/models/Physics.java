@@ -1,22 +1,31 @@
 package models;
 
 public class Physics extends MyMath {
+    BasicCalculater bc=new BasicCalculater();
 
-public double velocity(double changeX, double changeY){
-
-    return changeX;
+public double velocity(double x1, double x2,double t1, double t2){
+    double changeX;
+    double changeT;
+    changeT=t1-t2;
+    changeX=x1-x2;
+    return changeX/changeT;
 }
 
 
-public double acceleration(double changeV, double changeT){
-
-    return changeV;
+public double acceleration(double v1,double v2, double t1, double t2){
+    double changeV;
+    double changeT;
+    changeT=t1-t2;
+    changeV=v1-v2;
+    return changeV/changeT;
 }
 
 
 public double force(double m1, double m2){
+    double G=6.672*bc.exponents(10,-8);
+    double r2=15673681;
 
-    return m1;
+    return (G*m1*m2)/r2;
 }
 
 
