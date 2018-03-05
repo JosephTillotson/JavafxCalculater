@@ -28,16 +28,38 @@ public double force(double m1, double m2){
     return (G*m1*m2)/r2;
 }
 
+public double work(double force,  double distance){
 
-public double speed(double velocity, double time1, double time2, double acceleration){
-
-    return velocity;
+    return force*distance;
 }
 
+public double ef(double ei, double work){
+    return ei+work;
+}
 
-public double work(double force, double speed, double theta){
+public double KE(double mass, double velocity){
+    return .5*mass*velocity;
+}
 
-    return force;
+public double PEG(double mass,double height){
+    double g=6.67*bc.exponents(10,-11);
+    return mass*g*height;
+}
+
+public double pf(double Pi, double inpulse){
+    return Pi+inpulse;
+}
+
+public double P(double mass, double Veloccity){
+    return mass*Veloccity;
+}
+
+public double impulse(double force, double time){
+    return force*time;
+}
+
+public double power(double work, double time){
+    return work/time;
 }
 
 
