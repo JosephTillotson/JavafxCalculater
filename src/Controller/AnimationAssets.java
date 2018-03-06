@@ -17,6 +17,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import models.*;
 
 import java.beans.EventHandler;
 import java.net.URL;
@@ -81,19 +82,20 @@ public class AnimationAssets  extends Application implements Initializable {
     }
 
     public void showrightDrawer(ActionEvent event) {
-        rightclick.setOnAction(new javafx.event.EventHandler<ActionEvent>() {
+        rightclick.setOnMouseClicked(new javafx.event.EventHandler<MouseEvent>() {
             @Override
-            public void handle(ActionEvent event) {
-                if(rightDrawer.isShown()){
+            public void handle(MouseEvent event) {
+                if (rightDrawer.isShown()) {
                     rightDrawer.close();
-                }else
+                } else
                     rightDrawer.open();
+
             }
         });
+
     }
 
-
-        private long fnumber;
+    private long fnumber;
     private long snumber;
     private String operation;
 
