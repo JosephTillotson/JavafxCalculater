@@ -20,6 +20,8 @@ import javafx.stage.Stage;
 import models.*;
 
 import java.beans.EventHandler;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -27,7 +29,9 @@ public class AnimationAssets  extends Application implements Initializable {
     public static void main(String[] args) {
         Application.launch(AnimationAssets.class, args);
     }
+
     private  BasicCalculater bc=new BasicCalculater();
+
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(this.getClass().getResource("/Resources/MaterialCalculator.fxml"));
         Scene scene = new Scene(root);
@@ -212,6 +216,7 @@ public class AnimationAssets  extends Application implements Initializable {
                 input.setText(String.valueOf(system));
                 String oldPrompt = prompt.getText();
                 prompt.setText(oldPrompt + value);
+                save(system,fnumber,snumber);
                 break;
             case "-":
                 String valuesub = input.getText();
@@ -220,6 +225,7 @@ public class AnimationAssets  extends Application implements Initializable {
                 input.setText(String.valueOf(systemsub));
                 String oldPromptsub = prompt.getText();
                 prompt.setText(oldPromptsub + valuesub);
+                save(systemsub,fnumber, snumber);
                 break;
             case "x":
                 String valuemul = input.getText();
@@ -228,6 +234,7 @@ public class AnimationAssets  extends Application implements Initializable {
                 input.setText(String.valueOf(systemmul));
                 String oldPromptmul = prompt.getText();
                 prompt.setText(oldPromptmul + valuemul);
+                save(systemmul,fnumber,snumber);
                 break;
             case "/":
                 String valuediv = input.getText();
@@ -236,6 +243,7 @@ public class AnimationAssets  extends Application implements Initializable {
                 input.setText(String.valueOf(systemdiv));
                 String oldPromptdiv = prompt.getText();
                 prompt.setText(oldPromptdiv + valuediv);
+                save(systemdiv,fnumber,snumber);
                 break;
 
         }
@@ -247,6 +255,14 @@ public class AnimationAssets  extends Application implements Initializable {
         prompt.setText("");
         this.fnumber = 0;
         this.snumber = 0;
+    }
+
+    private void save(double answer, double x, double y){
+        try (PrintWriter out = new PrintWriter("filename.txt")) {
+            out.println(x+"+"+y +"="+ answer);
+        }catch (FileNotFoundException e){
+            //
+        }
     }
 }
 
