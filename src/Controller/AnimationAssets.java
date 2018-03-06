@@ -27,7 +27,7 @@ public class AnimationAssets  extends Application implements Initializable {
     public static void main(String[] args) {
         Application.launch(AnimationAssets.class, args);
     }
-
+    private  BasicCalculater bc=new BasicCalculater();
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(this.getClass().getResource("/Resources/MaterialCalculator.fxml"));
         Scene scene = new Scene(root);
@@ -95,8 +95,8 @@ public class AnimationAssets  extends Application implements Initializable {
 
     }
 
-    private long fnumber;
-    private long snumber;
+    private double fnumber;
+    private double snumber;
     private String operation;
 
     public void decimalclick() {
@@ -167,7 +167,7 @@ public class AnimationAssets  extends Application implements Initializable {
 
     public void plusclick() {
         String value = input.getText();
-        long valuenumber = Integer.parseInt(value);
+        double valuenumber = Double.parseDouble(value);
         this.fnumber = valuenumber;
         input.setText("");
         prompt.setText(value + "+");
@@ -178,7 +178,7 @@ public class AnimationAssets  extends Application implements Initializable {
 
     public void minusclick() {
         String value = input.getText();
-        long valuenumber = Integer.parseInt(value);
+        double valuenumber = Double.parseDouble(value);
         this.fnumber = valuenumber;
         input.setText("");
         prompt.setText(value + "-");
@@ -187,7 +187,7 @@ public class AnimationAssets  extends Application implements Initializable {
 
     public void multiplyclick() {
         String value = input.getText();
-        long valuenumber = Integer.parseInt(value);
+        double valuenumber = Double.parseDouble(value);
         this.fnumber = valuenumber;
         input.setText("");
         prompt.setText(value + "x");
@@ -196,7 +196,7 @@ public class AnimationAssets  extends Application implements Initializable {
 
     public void divideclick() {
         String value = input.getText();
-        long valuenumber = Integer.parseInt(value);
+        double valuenumber = Double.parseDouble(value);
         this.fnumber = valuenumber;
         input.setText("");
         prompt.setText(value + "/");
@@ -207,32 +207,32 @@ public class AnimationAssets  extends Application implements Initializable {
         switch (operation) {
             case "+":
                 String value = input.getText();
-                this.snumber = Integer.parseInt(value);
-                long system = this.fnumber + this.snumber;
+                this.snumber = Double.parseDouble(value);
+                double system = this.fnumber + this.snumber;
                 input.setText(String.valueOf(system));
                 String oldPrompt = prompt.getText();
                 prompt.setText(oldPrompt + value);
                 break;
             case "-":
                 String valuesub = input.getText();
-                this.snumber = Integer.parseInt(valuesub);
-                long systemsub = this.fnumber - this.snumber;
+                this.snumber = Double.parseDouble(valuesub);
+                double systemsub = this.fnumber - this.snumber;
                 input.setText(String.valueOf(systemsub));
                 String oldPromptsub = prompt.getText();
                 prompt.setText(oldPromptsub + valuesub);
                 break;
             case "x":
                 String valuemul = input.getText();
-                this.snumber = Integer.parseInt(valuemul);
-                long systemmul = this.fnumber * this.snumber;
+                this.snumber = Double.parseDouble(valuemul);
+                double systemmul = this.fnumber * this.snumber;
                 input.setText(String.valueOf(systemmul));
                 String oldPromptmul = prompt.getText();
                 prompt.setText(oldPromptmul + valuemul);
                 break;
             case "/":
                 String valuediv = input.getText();
-                this.snumber = Integer.parseInt(valuediv);
-                long systemdiv = this.fnumber / this.snumber;
+                this.snumber = Double.parseDouble(valuediv);
+                double systemdiv = this.fnumber / this.snumber;
                 input.setText(String.valueOf(systemdiv));
                 String oldPromptdiv = prompt.getText();
                 prompt.setText(oldPromptdiv + valuediv);

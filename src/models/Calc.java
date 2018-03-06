@@ -19,18 +19,18 @@ public class Calc {
     }
 
     private String exponents(String power){
-        String[] splited=power.split("^");
-        for(int i= 0; i <splited.length;i++){
-            System.out.println(splited[i]);
-        }
-         String ex = "";
-        for (int i = 0; i < splited.length;i++){
-            char x=splited[1].charAt(i);
-            if (Character.isDigit(x)){
-                ex=ex+x;
-            }
-            System.out.println(ex);
-        }
+//        String[] splited=power.split("^");
+//        for(int i= 0; i <splited.length;i++){
+//            System.out.println(splited[i]);
+//        }
+//         String ex = "";
+//        for (int i = 0; i < splited.length;i++){
+//            char x=splited[1].charAt(i);
+//            if (Character.isDigit(x)){
+//                ex=ex+x;
+//            }
+//            System.out.println(ex);
+//        }
         return power;
     }
 
