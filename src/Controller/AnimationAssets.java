@@ -44,6 +44,7 @@ public class AnimationAssets  extends Application implements Initializable {
 
 
 
+
     @FXML
     private JFXDrawer rightDrawer;
 
