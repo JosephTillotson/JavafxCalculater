@@ -81,20 +81,19 @@ public class AnimationAssets  extends Application implements Initializable {
     }
 
     public void showrightDrawer(ActionEvent event) {
-        rightclick.setOnMouseClicked(new javafx.event.EventHandler<MouseEvent>() {
+        rightclick.setOnAction(new javafx.event.EventHandler<ActionEvent>() {
             @Override
-            public void handle(MouseEvent event) {
-                if (rightDrawer.isShown()) {
+            public void handle(ActionEvent event) {
+                if(rightDrawer.isShown()){
                     rightDrawer.close();
-                } else
+                }else
                     rightDrawer.open();
-
             }
         });
-
     }
 
-    private long fnumber;
+
+        private long fnumber;
     private long snumber;
     private String operation;
 
