@@ -208,7 +208,7 @@ public class AnimationAssets  extends Application implements Initializable {
             case "+":
                 String value = input.getText();
                 this.snumber = Double.parseDouble(value);
-                double system = this.fnumber + this.snumber;
+                double system = bc.add(fnumber,snumber);
                 input.setText(String.valueOf(system));
                 String oldPrompt = prompt.getText();
                 prompt.setText(oldPrompt + value);
@@ -216,7 +216,7 @@ public class AnimationAssets  extends Application implements Initializable {
             case "-":
                 String valuesub = input.getText();
                 this.snumber = Double.parseDouble(valuesub);
-                double systemsub = this.fnumber - this.snumber;
+                double systemsub = bc.subtract(fnumber,snumber);
                 input.setText(String.valueOf(systemsub));
                 String oldPromptsub = prompt.getText();
                 prompt.setText(oldPromptsub + valuesub);
@@ -224,7 +224,7 @@ public class AnimationAssets  extends Application implements Initializable {
             case "x":
                 String valuemul = input.getText();
                 this.snumber = Double.parseDouble(valuemul);
-                double systemmul = this.fnumber * this.snumber;
+                double systemmul = bc.multiply(fnumber,snumber);
                 input.setText(String.valueOf(systemmul));
                 String oldPromptmul = prompt.getText();
                 prompt.setText(oldPromptmul + valuemul);
@@ -232,7 +232,7 @@ public class AnimationAssets  extends Application implements Initializable {
             case "/":
                 String valuediv = input.getText();
                 this.snumber = Double.parseDouble(valuediv);
-                double systemdiv = this.fnumber / this.snumber;
+                double systemdiv = bc.devide(fnumber,snumber);
                 input.setText(String.valueOf(systemdiv));
                 String oldPromptdiv = prompt.getText();
                 prompt.setText(oldPromptdiv + valuediv);
