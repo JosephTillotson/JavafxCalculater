@@ -240,6 +240,9 @@ public class AnimationAssets  extends Application implements Initializable {
                 String valuediv = input.getText();
                 this.snumber = Double.parseDouble(valuediv);
                 double systemdiv = bc.devide(fnumber,snumber);
+                if(snumber == 0){
+                    input.setText("Undefined");
+                }else
                 input.setText(String.valueOf(systemdiv));
                 String oldPromptdiv = prompt.getText();
                 prompt.setText(oldPromptdiv + valuediv);
