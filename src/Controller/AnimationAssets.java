@@ -25,6 +25,7 @@ import java.io.PrintWriter;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+
 public class AnimationAssets  extends Application implements Initializable {
     public static void main(String[] args) {
         Application.launch(AnimationAssets.class, args);
@@ -248,11 +249,17 @@ public class AnimationAssets  extends Application implements Initializable {
 
 
     public void LPclick() {
+        String oldvalue = input.getText();
+        String set = "(";
+        input.setText(oldvalue + set);
 
     }
 
 
     public void Piclick() {
+        String oldvalue = input.getText();
+        String set = "3.14";
+        input.setText(oldvalue + set);
 
     }
 
@@ -280,6 +287,12 @@ public class AnimationAssets  extends Application implements Initializable {
 
 
     public void SRclick() {
+        String value = input.getText();
+        double valuenumber = Double.parseDouble(value);
+        this.fnumber = valuenumber;
+        double system = s.squareroot(fnumber);
+        input.setText(String.valueOf(system));
+        prompt.setText(" √(" + value + ")");
 
     }
 
@@ -298,24 +311,55 @@ public class AnimationAssets  extends Application implements Initializable {
 
 
     public void Carclick() {
+        String value = input.getText();
+        double valuenumber = Double.parseDouble(value);
+        this.fnumber = valuenumber;
+        input.setText("");
+        prompt.setText(value + "^");
+        operation = "^";
 
     }
 
     public void Logclick() {
+        String value = input.getText();
+
+        double valuenumber = Double.parseDouble(value);
+        this.fnumber = valuenumber;
+
+        double system = s.mylog(fnumber);
+        input.setText(String.valueOf(system));
+        prompt.setText("Log(" + value + ")");
 
     }
 
 
     public void Lnclick() {
+        String value = input.getText();
+
+        double valuenumber = Double.parseDouble(value);
+        this.fnumber = valuenumber;
+
+        double system = s.myln(fnumber);
+        input.setText(String.valueOf(system));
+        prompt.setText("Ln(" + value + ")");
 
     }
 
 
     public void Fclick() {
+        String value = input.getText();
+
+        double valuenumber = Double.parseDouble(value);
+        this.fnumber = valuenumber;
+
+        double system = s.factoral(fnumber);
+        input.setText(String.valueOf(system));
+        prompt.setText(value + "!");
 
     }
 
     public void equalclicked() {
+
         switch (operation) {
             case "+":
                 String value = input.getText();
@@ -356,6 +400,16 @@ public class AnimationAssets  extends Application implements Initializable {
                 prompt.setText(oldPromptdiv + valuediv);
                 save(systemdiv,fnumber,snumber);
                 break;
+            case "^":
+                String valuecar = input.getText();
+                this.snumber = Double.parseDouble(valuecar);
+                double systemcar = Math.pow(fnumber,snumber);
+                input.setText(String.valueOf(systemcar));
+                String oldPromptcar = prompt.getText();
+                prompt.setText(oldPromptcar + valuecar);
+                save(systemcar,fnumber,snumber);
+                break;
+
 
 
         }
