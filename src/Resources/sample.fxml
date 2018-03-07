@@ -100,33 +100,53 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <AnchorPane layoutX="-2.0" layoutY="769.0" prefHeight="229.0" prefWidth="800.0">
+                        <AnchorPane layoutX="-2.0" layoutY="492.0" prefHeight="506.0" prefWidth="800.0">
                            <children>
-                              <VBox layoutX="-2.0" layoutY="-3.0" prefHeight="231.0" prefWidth="411.0">
+                              <GridPane layoutY="-7.0" prefHeight="513.0" prefWidth="800.0" style="-fx-background-color: #329999;">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
                                  <children>
-                                    <JFXButton prefHeight="251.0" prefWidth="465.0" style="-fx-background-color: #008080;" text="Physics" textFill="WHITE">
+                                    <JFXButton prefHeight="437.0" prefWidth="267.0" text="Linear Equation" textFill="WHITE">
                                        <font>
-                                          <Font name="Berlin Sans FB" size="36.0" />
+                                          <Font size="31.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="391.0" prefWidth="267.0" text="Slope Intercept" textFill="WHITE" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="31.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="293.0" prefWidth="266.0" text="Slope" textFill="WHITE" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="269.0" prefWidth="267.0" text="Distance " textFill="WHITE" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="437.0" prefWidth="267.0" text="Midpoint" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="255.0" prefWidth="266.0" text="Circle" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="34.0" />
                                        </font>
                                     </JFXButton>
                                  </children>
-                              </VBox>
-                              <VBox layoutX="409.0" layoutY="-3.0" prefHeight="232.0" prefWidth="409.0">
-                                 <children>
-                                    <JFXButton prefHeight="384.0" prefWidth="518.0" style="-fx-background-color: #666666;" text="College Algebra" textFill="WHITE">
-                                       <font>
-                                          <Font name="Berlin Sans FB" size="36.0" />
-                                       </font>
-                                    </JFXButton>
-                                 </children>
-                              </VBox>
+                              </GridPane>
                            </children>
                         </AnchorPane>
-                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="601.0" prefHeight="168.0" prefWidth="792.0" text="Pick Your Poison">
-                           <font>
-                              <Font size="44.0" />
-                           </font>
-                        </Label>
                      </children>
                   </AnchorPane>
             </content>

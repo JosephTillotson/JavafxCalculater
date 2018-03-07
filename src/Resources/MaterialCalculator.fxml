@@ -255,57 +255,57 @@
                         <AnchorPane layoutX="-2.0" layoutY="492.0" prefHeight="506.0" prefWidth="800.0" />
                         <GridPane layoutY="317.0" prefHeight="548.0" prefWidth="800.0" style="-fx-background-color: #329999;">
                            <children>
-                              <JFXButton prefHeight="437.0" prefWidth="267.0" text="Velocity" textFill="WHITE">
+                              <JFXButton onAction="#Vclick" prefHeight="437.0" prefWidth="267.0" text="Velocity" textFill="WHITE">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton prefHeight="391.0" prefWidth="267.0" text="Acceleration" textFill="WHITE" GridPane.columnIndex="1">
+                              <JFXButton onAction="#Aclick" prefHeight="391.0" prefWidth="267.0" text="Acceleration" textFill="WHITE" GridPane.columnIndex="1">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton prefHeight="293.0" prefWidth="266.0" text="Force" textFill="WHITE" GridPane.columnIndex="2">
+                              <JFXButton onAction="#Fclick" prefHeight="293.0" prefWidth="266.0" text="Force" textFill="WHITE" GridPane.columnIndex="2">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton prefHeight="269.0" prefWidth="267.0" text="Work" textFill="WHITE" GridPane.rowIndex="1">
+                              <JFXButton onAction="#Wclick" prefHeight="269.0" prefWidth="267.0" text="Work" textFill="WHITE" GridPane.rowIndex="1">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton prefHeight="437.0" prefWidth="267.0" text="Final Energy" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                              <JFXButton onAction="#FEclick" prefHeight="437.0" prefWidth="267.0" text="Final Energy" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton prefHeight="255.0" prefWidth="266.0" text="Kinetic Energy" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                              <JFXButton onAction="#KEclick" prefHeight="255.0" prefWidth="266.0" text="Kinetic Energy" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                  <font>
                                     <Font size="29.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton prefHeight="283.0" prefWidth="267.0" text="Potential Energy" textFill="WHITE" GridPane.rowIndex="2">
+                              <JFXButton onAction="#PEclick" prefHeight="283.0" prefWidth="267.0" text="Potential Energy" textFill="WHITE" GridPane.rowIndex="2">
                                  <font>
                                     <Font size="29.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton prefHeight="304.0" prefWidth="267.0" text="Final Momentum" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                              <JFXButton onAction="#FMclick" prefHeight="304.0" prefWidth="267.0" text="Final Momentum" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                  <font>
                                     <Font size="29.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton prefHeight="346.0" prefWidth="266.0" text="Momentum" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                              <JFXButton onAction="#Mclick" prefHeight="346.0" prefWidth="266.0" text="Momentum" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton prefHeight="244.0" prefWidth="267.0" text="Impulse" textFill="WHITE" GridPane.rowIndex="3">
+                              <JFXButton onAction="#Iclick" prefHeight="244.0" prefWidth="267.0" text="Impulse" textFill="WHITE" GridPane.rowIndex="3">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton prefHeight="276.0" prefWidth="267.0" text="Power" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <JFXButton onAction="#Pclick" prefHeight="276.0" prefWidth="267.0" text="Power" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
@@ -336,32 +336,32 @@
                            <children>
                               <GridPane layoutY="-2.0" prefHeight="548.0" prefWidth="800.0" style="-fx-background-color: #329999;">
                                  <children>
-                                    <JFXButton prefHeight="437.0" prefWidth="267.0" text="Linear Equation" textFill="WHITE">
+                                    <JFXButton onAction="#LEclick" prefHeight="437.0" prefWidth="267.0" text="Linear Equation" textFill="WHITE">
                                        <font>
                                           <Font size="31.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="391.0" prefWidth="267.0" text="Slope Intercept" textFill="WHITE" GridPane.columnIndex="1">
+                                    <JFXButton onAction="#SIclick" prefHeight="391.0" prefWidth="267.0" text="Slope Intercept" textFill="WHITE" GridPane.columnIndex="1">
                                        <font>
                                           <Font size="31.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="293.0" prefWidth="266.0" text="Slope" textFill="WHITE" GridPane.columnIndex="2">
+                                    <JFXButton onAction="#Sclick" prefHeight="293.0" prefWidth="266.0" text="Slope" textFill="WHITE" GridPane.columnIndex="2">
                                        <font>
                                           <Font size="36.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="269.0" prefWidth="267.0" text="Distance " textFill="WHITE" GridPane.rowIndex="1">
+                                    <JFXButton onAction="#Dclick" prefHeight="269.0" prefWidth="267.0" text="Distance " textFill="WHITE" GridPane.rowIndex="1">
                                        <font>
                                           <Font size="36.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="437.0" prefWidth="267.0" text="Midpoint" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <JFXButton onAction="#MPClick" prefHeight="437.0" prefWidth="267.0" text="Midpoint" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                        <font>
                                           <Font size="36.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="255.0" prefWidth="266.0" text="Circle" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                    <JFXButton onAction="#CClick" prefHeight="255.0" prefWidth="266.0" text="Circle" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                        <font>
                                           <Font size="34.0" />
                                        </font>

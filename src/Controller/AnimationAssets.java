@@ -343,6 +343,92 @@ public class AnimationAssets  extends Application {
 
     }
 
+    @FXML
+    void Fclick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void Vclick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void Aclick(ActionEvent event) {
+
+    }
+
+
+    @FXML
+    void Wclick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void FEclick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void KEclick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void PEclick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void FMclick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void Mclick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void Iclick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void Pclick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void LEclick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void SIclick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void Sclick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void Dclick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void MPClick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void CClick(ActionEvent event) {
+
+    }
+
     public void equalclicked() {
 
         switch (operation) {
