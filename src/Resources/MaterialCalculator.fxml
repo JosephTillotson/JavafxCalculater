@@ -13,7 +13,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AnimationAssets">
    <children>
-      <JFXDrawer fx:id="LeftDrawer" blendMode="SRC_ATOP" defaultDrawerSize="300.0" prefHeight="351.0" prefWidth="0.0" />
+      <JFXDrawer fx:id="LeftDrawer" blendMode="SRC_ATOP" defaultDrawerSize="300.0" layoutY="31.0" prefHeight="320.0" prefWidth="311.0" />
       <JFXTabPane prefHeight="900.0" prefWidth="800.0">
          <tabs>
           <Tab text="Main">
@@ -169,74 +169,74 @@
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <JFXButton prefHeight="329.0" prefWidth="200.0" text="Sin" textFill="WHITE">
+                                    <JFXButton fx:id="Sine" onAction="#Sineclick" prefHeight="329.0" prefWidth="200.0" text="Sin" textFill="WHITE">
                                        <font>
                                           <Font size="30.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="160.0" prefWidth="200.0" text="Csc" textFill="WHITE" GridPane.rowIndex="1">
+                                    <JFXButton fx:id="Cosecant" onAction="#Cscclick" prefHeight="160.0" prefWidth="200.0" text="Csc" textFill="WHITE" GridPane.rowIndex="1">
                                        <font>
                                           <Font size="30.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="553.0" prefWidth="200.0" text="Cos" textFill="WHITE" GridPane.columnIndex="1">
+                                    <JFXButton fx:id="Cosine" onAction="#Cosclick" prefHeight="553.0" prefWidth="200.0" text="Cos" textFill="WHITE" GridPane.columnIndex="1">
                                        <font>
                                           <Font size="30.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="567.0" prefWidth="200.0" text="Tan" textFill="WHITE" GridPane.columnIndex="2">
+                                    <JFXButton fx:id="Tangent" onAction="#Tanclick" prefHeight="567.0" prefWidth="200.0" text="Tan" textFill="WHITE" GridPane.columnIndex="2">
                                        <font>
                                           <Font size="30.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="228.0" prefWidth="200.0" text="(" textFill="WHITE" GridPane.rowIndex="2">
+                                    <JFXButton fx:id="LeftParen" onAction="#LPclick" prefHeight="228.0" prefWidth="200.0" text="(" textFill="WHITE" GridPane.rowIndex="2">
                                        <font>
                                           <Font size="30.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="163.0" prefWidth="200.0" text="π" textFill="WHITE" GridPane.rowIndex="3">
+                                    <JFXButton fx:id="Pi" onAction="#Piclick" prefHeight="163.0" prefWidth="200.0" text="π" textFill="WHITE" GridPane.rowIndex="3">
                                        <font>
                                           <Font size="30.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="438.0" prefWidth="200.0" text="Sec" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <JFXButton fx:id="Secant" onAction="#Secclick" prefHeight="438.0" prefWidth="200.0" text="Sec" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                        <font>
                                           <Font size="30.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="308.0" prefWidth="200.0" text=")" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <JFXButton fx:id="RightParen" onAction="#RPclick" prefHeight="308.0" prefWidth="200.0" text=")" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                        <font>
                                           <Font size="30.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="221.0" prefWidth="200.0" text=" √" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                    <JFXButton fx:id="SquareRoot" onAction="#SRclick" prefHeight="221.0" prefWidth="200.0" text=" √" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                        <font>
                                           <Font size="30.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="403.0" prefWidth="200.0" text="Cot" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                    <JFXButton fx:id="Cotangent" onAction="#Cotclick" prefHeight="403.0" prefWidth="200.0" text="Cot" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                        <font>
                                           <Font size="30.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="563.0" prefWidth="200.0" text="^" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                    <JFXButton fx:id="Carrot" onAction="#Carclick" prefHeight="563.0" prefWidth="200.0" text="^" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                        <font>
                                           <Font size="30.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="304.0" prefWidth="200.0" text="Log" textFill="WHITE" GridPane.columnIndex="3">
+                                    <JFXButton fx:id="Log" onAction="#Logclick" prefHeight="304.0" prefWidth="200.0" text="Log" textFill="WHITE" GridPane.columnIndex="3">
                                        <font>
                                           <Font size="30.0" />
                                        </font>
                                     </JFXButton>
-                                    <JFXButton prefHeight="392.0" prefWidth="200.0" text="Ln" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                    <JFXButton fx:id="Ln" onAction="#Lnclick" prefHeight="392.0" prefWidth="200.0" text="Ln" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
                                        <font>
                                           <Font size="30.0" />
                                        </font>
                                     </JFXButton>
                                     <JFXButton prefHeight="472.0" prefWidth="200.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="3" />
                                     <JFXButton prefHeight="251.0" prefWidth="200.0" text=" " GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                                    <JFXButton prefHeight="276.0" prefWidth="200.0" text="!" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                    <JFXButton fx:id="Factorial" onAction="#Fclick" prefHeight="276.0" prefWidth="200.0" text="!" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
                                        <font>
                                           <Font size="30.0" />
                                        </font>
@@ -251,7 +251,7 @@
           </Tab>
          </tabs>
       </JFXTabPane>
-      <JFXHamburger fx:id="ham" layoutX="-621.0" layoutY="410.0" prefHeight="49.0" prefWidth="56.0" />
+      <JFXHamburger fx:id="ham" layoutY="42.0" prefHeight="66.0" prefWidth="63.0" />
       <JFXTextField fx:id="input" alignment="CENTER_RIGHT" layoutX="315.0" layoutY="203.0" prefHeight="147.0" prefWidth="485.0">
          <font>
             <Font size="36.0" />

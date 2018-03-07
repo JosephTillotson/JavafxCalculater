@@ -31,6 +31,7 @@ public class AnimationAssets  extends Application implements Initializable {
     }
 
     private  BasicCalculater bc=new BasicCalculater();
+    private Schientific s = new Schientific();
 
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(this.getClass().getResource("/Resources/MaterialCalculator.fxml"));
@@ -193,6 +194,127 @@ public class AnimationAssets  extends Application implements Initializable {
         operation = "/";
     }
 
+
+   public void Sineclick() {
+       String value = input.getText();
+
+       double valuenumber = Double.parseDouble(value);
+       this.fnumber = valuenumber;
+
+      double system = s.mySin(fnumber);
+       input.setText(String.valueOf(system));
+       prompt.setText("Sin(" + value + ")");
+
+    }
+
+
+    public void Cscclick() {
+        String value = input.getText();
+
+        double valuenumber = Double.parseDouble(value);
+        this.fnumber = valuenumber;
+
+        double system = s.mycsc(fnumber);
+        input.setText(String.valueOf(system));
+        prompt.setText("Csc(" + value + ")");
+
+    }
+
+
+    public void Cosclick() {
+        String value = input.getText();
+
+        double valuenumber = Double.parseDouble(value);
+        this.fnumber = valuenumber;
+
+        double system = s.myCos(fnumber);
+        input.setText(String.valueOf(system));
+        prompt.setText("Cos(" + value + ")");
+
+    }
+
+
+    public void Tanclick() {
+        String value = input.getText();
+
+        double valuenumber = Double.parseDouble(value);
+        this.fnumber = valuenumber;
+
+        double system = s.myTan(fnumber);
+        input.setText(String.valueOf(system));
+        prompt.setText("Tan(" + value + ")");
+
+    }
+
+
+    public void LPclick() {
+
+    }
+
+
+    public void Piclick() {
+
+    }
+
+
+    public void Secclick() {
+        String value = input.getText();
+
+        double valuenumber = Double.parseDouble(value);
+        this.fnumber = valuenumber;
+
+        double system = s.mySec(fnumber);
+        input.setText(String.valueOf(system));
+        prompt.setText("Sec(" + value + ")");
+
+    }
+
+
+    public void RPclick() {
+        String oldvalue = input.getText();
+        String set = ")";
+        input.setText(oldvalue + set);
+
+
+    }
+
+
+    public void SRclick() {
+
+    }
+
+
+    public void Cotclick() {
+        String value = input.getText();
+
+        double valuenumber = Double.parseDouble(value);
+        this.fnumber = valuenumber;
+
+        double system = s.myCot(fnumber);
+        input.setText(String.valueOf(system));
+        prompt.setText("Cot(" + value + ")");
+
+    }
+
+
+    public void Carclick() {
+
+    }
+
+    public void Logclick() {
+
+    }
+
+
+    public void Lnclick() {
+
+    }
+
+
+    public void Fclick() {
+
+    }
+
     public void equalclicked() {
         switch (operation) {
             case "+":
@@ -234,6 +356,7 @@ public class AnimationAssets  extends Application implements Initializable {
                 prompt.setText(oldPromptdiv + valuediv);
                 save(systemdiv,fnumber,snumber);
                 break;
+
 
         }
 
