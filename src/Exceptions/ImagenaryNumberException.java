@@ -5,7 +5,7 @@ public class ImagenaryNumberException extends IllegalArgumentException{
     public ImagenaryNumberException(){
 
     }
-//taco
+
     public ImagenaryNumberException(String s){
         super(s);
     }
