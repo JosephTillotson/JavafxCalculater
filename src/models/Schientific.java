@@ -97,7 +97,7 @@ public class Schientific extends MyMath{
      * @return the answer
      */
     public double mylog(double x){
-        return log(x);
+        return Math.log10(x);
     }
 
     /**
@@ -106,6 +106,6 @@ public class Schientific extends MyMath{
      * @return the value
      */
     public double myln(double x){
-        return 1/log(x);
+        return Math.log(x);
     }
 }
