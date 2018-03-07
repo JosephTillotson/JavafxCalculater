@@ -182,6 +182,7 @@ public class AnimationAssets  extends Application {
 
 
    public void Sineclick() {
+
        String value = input.getText();
 
        double valuenumber = Double.parseDouble(value);
@@ -331,7 +332,7 @@ public class AnimationAssets  extends Application {
     }
 
 
-    public void Fclick() {
+    public void Facclick() {
         String value = input.getText();
 
         double valuenumber = Double.parseDouble(value);
@@ -345,6 +346,9 @@ public class AnimationAssets  extends Application {
 
     @FXML
     void Fclick(ActionEvent event) {
+
+
+
 
     }
 
@@ -401,6 +405,7 @@ public class AnimationAssets  extends Application {
 
     @FXML
     void LEclick(ActionEvent event) {
+
 
     }
 
@@ -500,6 +505,22 @@ public class AnimationAssets  extends Application {
         }catch (FileNotFoundException e){
             //
         }
+    }
+    boolean wait = true;
+    public String waitforuser(){
+        String value = null;
+
+        while(wait){
+            try{
+                if(value != null){
+                    break;
+                }
+                value = input.getText();
+
+            }catch (Exception ex){
+
+            }
+        }return value;
     }
 }
 

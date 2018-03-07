@@ -235,7 +235,7 @@
                                     </JFXButton>
                                     <JFXButton prefHeight="472.0" prefWidth="200.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="3" />
                                     <JFXButton prefHeight="251.0" prefWidth="200.0" text=" " GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                                    <JFXButton fx:id="Factorial" onAction="#Fclick" prefHeight="276.0" prefWidth="200.0" text="!" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                    <JFXButton fx:id="Factorial" onAction="#Facclick" prefHeight="276.0" prefWidth="200.0" text="!" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
                                        <font>
                                           <Font size="30.0" />
                                        </font>
