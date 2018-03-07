@@ -13,140 +13,245 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AnimationAssets">
    <children>
-      <JFXDrawer fx:id="LeftDrawer" blendMode="SRC_ATOP" defaultDrawerSize="300.0" prefHeight="351.0" prefWidth="304.0" />
-      <AnchorPane layoutY="350.0" prefHeight="550.0" prefWidth="801.0">
-         <children>
-            <GridPane prefHeight="550.0" prefWidth="601.0" style="-fx-background-color: #404040;">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <effect>
-                  <DisplacementMap>
-                     <mapData>
-                        <FloatMap />
-                     </mapData>
-                  </DisplacementMap>
-               </effect>
-               <children>
-                  <JFXButton fx:id="seven" onAction="#sevenclick" prefHeight="195.0" prefWidth="201.0" text="7" textFill="WHITE">
-                     <font>
-                        <Font size="49.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton fx:id="four" onAction="#fourclick" prefHeight="270.0" prefWidth="201.0" text="4" textFill="WHITE" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="49.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton fx:id="eight" onAction="#eightclick" prefHeight="138.0" prefWidth="309.0" text="8" textFill="WHITE" GridPane.columnIndex="1">
-                     <font>
-                        <Font size="49.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton fx:id="Nine" onAction="#nineclick" prefHeight="318.0" prefWidth="200.0" text="9" textFill="WHITE" GridPane.columnIndex="2">
-                     <font>
-                        <Font size="49.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton fx:id="one" onAction="#oneclick" prefHeight="283.0" prefWidth="201.0" text="1" textFill="WHITE" GridPane.rowIndex="2">
-                     <font>
-                        <Font size="49.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton fx:id="decimalpoint" onAction="#decimalclick" prefHeight="350.0" prefWidth="201.0" text="." textFill="WHITE" GridPane.rowIndex="3">
-                     <font>
-                        <Font size="49.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton fx:id="five" onAction="#fiveclick" prefHeight="138.0" prefWidth="220.0" text="5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="49.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton fx:id="two" onAction="#twoclick" prefHeight="202.0" prefWidth="200.0" text="2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                     <font>
-                        <Font size="49.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton fx:id="zero" onAction="#zeroclick" prefHeight="137.0" prefWidth="319.0" text="0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                     <font>
-                        <Font size="49.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton fx:id="six" onAction="#sixclick" prefHeight="339.0" prefWidth="200.0" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="49.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton fx:id="three" onAction="#threeclick" prefHeight="137.0" prefWidth="283.0" text="3" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
-                     <font>
-                        <Font size="49.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton fx:id="equals" onAction="#equalclicked" prefHeight="137.0" prefWidth="410.0" text="=" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
-                     <font>
-                        <Font size="49.0" />
-                     </font>
-                  </JFXButton>
-               </children>
-            </GridPane>
-            <GridPane layoutX="601.0" prefHeight="550.0" prefWidth="152.0" style="-fx-background-color: #666666;">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.0" minWidth="10.0" prefWidth="152.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="0.0" prefWidth="0.0" />
-              </columnConstraints>
-              <rowConstraints>
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <JFXButton fx:id="plus" onAction="#plusclick" prefHeight="110.0" prefWidth="286.0" text="+" textFill="WHITE" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="36.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton fx:id="minus" onAction="#minusclick" prefHeight="168.0" prefWidth="186.0" text="-" textFill="WHITE" GridPane.rowIndex="2">
-                     <font>
-                        <Font size="36.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton fx:id="multiply" onAction="#multiplyclick" prefHeight="167.0" prefWidth="153.0" text="x" textFill="WHITE" GridPane.rowIndex="3">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton fx:id="divide" contentDisplay="CENTER" onAction="#divideclick" prefHeight="250.0" prefWidth="384.0" text="÷" textFill="WHITE" GridPane.rowIndex="4">
-                     <font>
-                        <Font size="36.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton fx:id="Del" onAction="#clearclick" prefHeight="110.0" prefWidth="182.0" text="CLR" textFill="WHITE">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </JFXButton>
-               </children>
-            </GridPane>
-            <JFXDrawer fx:id="rightDrawer" defaultDrawerSize="800.0" direction="RIGHT" prefHeight="550.0" prefWidth="801.0" />
-            <VBox layoutX="753.0" prefHeight="550.0" prefWidth="49.0">
-               <children>
-                  <JFXButton fx:id="rightclick" onAction="#showrightDrawer" prefHeight="576.0" prefWidth="71.0" style="-fx-background-color: #66b2b2;" text="  " />
-               </children>
-            </VBox>
-         </children>
-      </AnchorPane>
-      <JFXHamburger fx:id="ham" layoutX="23.0" layoutY="29.0" prefHeight="49.0" prefWidth="56.0" />
+      <JFXDrawer fx:id="LeftDrawer" blendMode="SRC_ATOP" defaultDrawerSize="300.0" prefHeight="351.0" prefWidth="0.0" />
+      <JFXTabPane prefHeight="900.0" prefWidth="800.0">
+         <tabs>
+          <Tab text="Main">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="800.0">
+                     <children>
+                        <AnchorPane layoutY="298.0" prefHeight="550.0" prefWidth="802.0">
+                           <children>
+                              <GridPane layoutY="18.0" prefHeight="550.0" prefWidth="601.0" style="-fx-background-color: #404040;">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <effect>
+                                    <DisplacementMap>
+                                       <mapData>
+                                          <FloatMap />
+                                       </mapData>
+                                    </DisplacementMap>
+                                 </effect>
+                                 <children>
+                                    <JFXButton fx:id="seven" onAction="#sevenclick" prefHeight="195.0" prefWidth="201.0" text="7" textFill="WHITE">
+                                       <font>
+                                          <Font size="49.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="four" onAction="#fourclick" prefHeight="270.0" prefWidth="201.0" text="4" textFill="WHITE" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="49.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="eight" onAction="#eightclick" prefHeight="138.0" prefWidth="309.0" text="8" textFill="WHITE" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="49.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="Nine" onAction="#nineclick" prefHeight="318.0" prefWidth="200.0" text="9" textFill="WHITE" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font size="49.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="one" onAction="#oneclick" prefHeight="283.0" prefWidth="201.0" text="1" textFill="WHITE" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="49.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="decimalpoint" onAction="#decimalclick" prefHeight="350.0" prefWidth="201.0" text="." textFill="WHITE" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="49.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="five" onAction="#fiveclick" prefHeight="138.0" prefWidth="220.0" text="5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="49.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="two" onAction="#twoclick" prefHeight="202.0" prefWidth="200.0" text="2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="49.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="zero" onAction="#zeroclick" prefHeight="137.0" prefWidth="319.0" text="0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="49.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="six" onAction="#sixclick" prefHeight="339.0" prefWidth="200.0" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="49.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="three" onAction="#threeclick" prefHeight="137.0" prefWidth="283.0" text="3" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="49.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="equals" onAction="#equalclicked" prefHeight="137.0" prefWidth="410.0" text="=" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="49.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </GridPane>
+                              <GridPane layoutX="601.0" layoutY="18.0" prefHeight="550.0" prefWidth="201.0" style="-fx-background-color: #666666;">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <JFXButton fx:id="clear" onAction="#clearclick" prefHeight="258.0" prefWidth="201.0" text="CLR" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="plus" onAction="#plusclick" prefHeight="340.0" prefWidth="201.0" text="+" textFill="WHITE" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="minus" onAction="#minusclick" prefHeight="208.0" prefWidth="201.0" text="-" textFill="WHITE" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="multiply" onAction="#multiplyclick" prefHeight="243.0" prefWidth="201.0" text="x" textFill="WHITE" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="divide" onAction="#divideclick" prefHeight="497.0" prefWidth="201.0" text="/" textFill="WHITE" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Other Symbols">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutY="309.0" prefHeight="538.0" prefWidth="800.0">
+                           <children>
+                              <GridPane layoutY="6.0" prefHeight="557.0" prefWidth="800.0" style="-fx-background-color: #006666;">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <JFXButton prefHeight="329.0" prefWidth="200.0" text="Sin" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="160.0" prefWidth="200.0" text="Csc" textFill="WHITE" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="553.0" prefWidth="200.0" text="Cos" textFill="WHITE" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="567.0" prefWidth="200.0" text="Tan" textFill="WHITE" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="228.0" prefWidth="200.0" text="(" textFill="WHITE" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="163.0" prefWidth="200.0" text="π" textFill="WHITE" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="438.0" prefWidth="200.0" text="Sec" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="308.0" prefWidth="200.0" text=")" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="221.0" prefWidth="200.0" text=" √" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="403.0" prefWidth="200.0" text="Cot" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="563.0" prefWidth="200.0" text="^" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="304.0" prefWidth="200.0" text="Log" textFill="WHITE" GridPane.columnIndex="3">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="392.0" prefWidth="200.0" text="Ln" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="472.0" prefWidth="200.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <JFXButton prefHeight="251.0" prefWidth="200.0" text=" " GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                    <JFXButton prefHeight="276.0" prefWidth="200.0" text="!" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+         </tabs>
+      </JFXTabPane>
+      <JFXHamburger fx:id="ham" layoutX="-621.0" layoutY="410.0" prefHeight="49.0" prefWidth="56.0" />
       <JFXTextField fx:id="input" alignment="CENTER_RIGHT" layoutX="315.0" layoutY="203.0" prefHeight="147.0" prefWidth="485.0">
          <font>
             <Font size="36.0" />
@@ -157,5 +262,6 @@
             <Font size="50.0" />
          </font>
       </Label>
+      <VBox layoutX="-410.0" layoutY="611.0" prefHeight="550.0" prefWidth="49.0" />
    </children>
 </AnchorPane>

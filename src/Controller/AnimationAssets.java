@@ -45,8 +45,7 @@ public class AnimationAssets  extends Application implements Initializable {
 
 
 
-    @FXML
-    private JFXDrawer rightDrawer;
+
 
 
 
@@ -84,20 +83,6 @@ public class AnimationAssets  extends Application implements Initializable {
                 LeftDrawer.open();
 
         });
-    }
-
-    public void showrightDrawer(ActionEvent event) {
-        rightclick.setOnMouseClicked(new javafx.event.EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                if (rightDrawer.isShown()) {
-                    rightDrawer.close();
-                } else
-                    rightDrawer.open();
-
-            }
-        });
-
     }
 
     private double fnumber;
