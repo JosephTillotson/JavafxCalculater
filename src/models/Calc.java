@@ -45,6 +45,12 @@ public class Calc {
 //    private String quotientRule(String quotient){
 //
 //    }
+
+    /**
+     * This will dirive a calc equasion
+     * @param dirive String that will be dirived
+     * @return will return a dirived string
+     */
     public String drive(String dirive){
         String[] parts= dirive.split("[-+]");
         for(int i= 0; i<parts.length; i++){
