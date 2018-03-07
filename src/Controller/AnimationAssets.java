@@ -26,7 +26,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class AnimationAssets  extends Application implements Initializable {
+public class AnimationAssets  extends Application {
     public static void main(String[] args) {
         Application.launch(AnimationAssets.class, args);
     }
@@ -71,21 +71,6 @@ public class AnimationAssets  extends Application implements Initializable {
     @FXML
 
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        HamburgerSlideCloseTransition transition = new HamburgerSlideCloseTransition(ham);
-        transition.setRate(-1);
-        ham.addEventHandler(MouseEvent.MOUSE_CLICKED, (e) -> {
-            transition.setRate(transition.getRate() * -1);
-            transition.play();
-
-            if (LeftDrawer.isShown()) {
-                LeftDrawer.close();
-            } else
-                LeftDrawer.open();
-
-        });
-    }
 
     private double fnumber;
     private double snumber;

@@ -10,37 +10,18 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<!--this one-->
+
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AnimationAssets">
    <children>
-      <JFXDrawer fx:id="LeftDrawer" blendMode="SRC_ATOP" defaultDrawerSize="300.0" layoutY="31.0" prefHeight="320.0" prefWidth="311.0" />
       <JFXTabPane prefHeight="900.0" prefWidth="800.0">
          <tabs>
-          <Tab text="Main">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="800.0">
+            <Tab text="Main">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="800.0">
                      <children>
                         <AnchorPane layoutY="298.0" prefHeight="550.0" prefWidth="802.0">
                            <children>
                               <GridPane layoutY="18.0" prefHeight="550.0" prefWidth="601.0" style="-fx-background-color: #404040;">
-                                <columnConstraints>
-                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                </columnConstraints>
-                                <rowConstraints>
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                </rowConstraints>
-                                 <effect>
-                                    <DisplacementMap>
-                                       <mapData>
-                                          <FloatMap />
-                                       </mapData>
-                                    </DisplacementMap>
-                                 </effect>
                                  <children>
                                     <JFXButton fx:id="seven" onAction="#sevenclick" prefHeight="195.0" prefWidth="201.0" text="7" textFill="WHITE">
                                        <font>
@@ -103,18 +84,26 @@
                                        </font>
                                     </JFXButton>
                                  </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <effect>
+                                    <DisplacementMap>
+                                       <mapData>
+                                          <FloatMap />
+                                       </mapData>
+                                    </DisplacementMap>
+                                 </effect>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
                               </GridPane>
                               <GridPane layoutX="601.0" layoutY="18.0" prefHeight="550.0" prefWidth="201.0" style="-fx-background-color: #666666;">
-                                <columnConstraints>
-                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                </columnConstraints>
-                                <rowConstraints>
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                </rowConstraints>
                                  <children>
                                     <JFXButton fx:id="clear" onAction="#clearclick" prefHeight="258.0" prefWidth="201.0" text="CLR" textFill="WHITE">
                                        <font>
@@ -142,13 +131,23 @@
                                        </font>
                                     </JFXButton>
                                  </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
                               </GridPane>
                            </children>
                         </AnchorPane>
                      </children>
                   </AnchorPane>
-            </content>
-          </Tab>
+               </content>
+            </Tab>
           <Tab text="Other Symbols">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
@@ -249,9 +248,143 @@
                   </AnchorPane>
             </content>
           </Tab>
+            <Tab text="Physics Solver">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="-2.0" layoutY="492.0" prefHeight="506.0" prefWidth="800.0" />
+                        <GridPane layoutY="317.0" prefHeight="548.0" prefWidth="800.0" style="-fx-background-color: #329999;">
+                           <children>
+                              <JFXButton prefHeight="437.0" prefWidth="267.0" text="Velocity" textFill="WHITE">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton prefHeight="391.0" prefWidth="267.0" text="Acceleration" textFill="WHITE" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton prefHeight="293.0" prefWidth="266.0" text="Force" textFill="WHITE" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton prefHeight="269.0" prefWidth="267.0" text="Work" textFill="WHITE" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton prefHeight="437.0" prefWidth="267.0" text="Final Energy" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton prefHeight="255.0" prefWidth="266.0" text="Kinetic Energy" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton prefHeight="283.0" prefWidth="267.0" text="Potential Energy" textFill="WHITE" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton prefHeight="304.0" prefWidth="267.0" text="Final Momentum" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton prefHeight="346.0" prefWidth="266.0" text="Momentum" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton prefHeight="244.0" prefWidth="267.0" text="Impulse" textFill="WHITE" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton prefHeight="276.0" prefWidth="267.0" text="Power" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton prefHeight="458.0" prefWidth="266.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Algebra Solver">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutY="320.0" prefHeight="545.0" prefWidth="800.0">
+                           <children>
+                              <GridPane layoutY="-2.0" prefHeight="548.0" prefWidth="800.0" style="-fx-background-color: #329999;">
+                                 <children>
+                                    <JFXButton prefHeight="437.0" prefWidth="267.0" text="Linear Equation" textFill="WHITE">
+                                       <font>
+                                          <Font size="31.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="391.0" prefWidth="267.0" text="Slope Intercept" textFill="WHITE" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="31.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="293.0" prefWidth="266.0" text="Slope" textFill="WHITE" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="269.0" prefWidth="267.0" text="Distance " textFill="WHITE" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="437.0" prefWidth="267.0" text="Midpoint" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="255.0" prefWidth="266.0" text="Circle" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="34.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
          </tabs>
       </JFXTabPane>
-      <JFXHamburger fx:id="ham" layoutY="42.0" prefHeight="66.0" prefWidth="63.0" />
       <JFXTextField fx:id="input" alignment="CENTER_RIGHT" layoutX="315.0" layoutY="203.0" prefHeight="147.0" prefWidth="485.0">
          <font>
             <Font size="36.0" />
@@ -262,6 +395,5 @@
             <Font size="50.0" />
          </font>
       </Label>
-      <VBox layoutX="-410.0" layoutY="611.0" prefHeight="550.0" prefWidth="49.0" />
    </children>
 </AnchorPane>
