@@ -77,4 +77,35 @@ public class Schientific extends MyMath{
     public double mycsc(double x){
         return 1/cos(x);
     }
+
+    /**
+     * Will solve the factorial
+     * @param x the main number
+     * @return will return the answer;
+     */
+    public double factoral(double x){
+        double answer=1;
+        for (int i= 1 ; i < x; i++){
+            answer = answer*i;
+        }
+        return answer;
+    }
+
+    /**
+     * will solve for the log of x
+     * @param x the value
+     * @return the answer
+     */
+    public double mylog(double x){
+        return log(x);
+    }
+
+    /**
+     * will solve for the value of natural log
+     * @param x it is the value to be ln
+     * @return the value
+     */
+    public double myln(double x){
+        return 1/log(x);
+    }
 }
