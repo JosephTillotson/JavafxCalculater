@@ -674,13 +674,16 @@ input.setText(String.valueOf(ans));
         double a =0;
         double b=0;
         double c=0;
+        String ans="";
         Q();
         Q2();
         Q3();
-        pv1 = a;
-        pv2 = b;
-        pv3 = c;
-        double[] ans = e.QuadraticFormula(a,b,c);
+        a = pv1;
+        b = pv2;
+        c = pv3;
+        for (int i = 0; i < e.QuadraticFormula(a,b,c).length;i++) {
+             ans =ans+ e.QuadraticFormula(a, b, c)[i]+", ";
+        }
         input.setText(String.valueOf(ans));
         pv1 = 0;
         pv2 = 0;
