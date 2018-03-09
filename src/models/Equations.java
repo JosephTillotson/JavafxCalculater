@@ -17,7 +17,7 @@ public class Equations {
      */
     public double standardeq(double a, double x, double b, double y){
 
-        return a*x+b*y;
+        return (a*x)+(b*y);
     }
 
     /**

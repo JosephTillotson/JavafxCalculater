@@ -7,16 +7,13 @@ public class Physics extends MyMath {
      * this is the velocity of an object
      * @param x1 the first distance
      * @param x2 second distance
-     * @param t1 first time
-     * @param t2 second time
+     *           @param t the time interval of the displacement
      * @return the velocity of the item
      */
-    public double velocity(double x1, double x2,double t1, double t2){
+    public double velocity(double x1, double x2,double t){
     double changeX;
-    double changeT;
-    changeT=t1-t2;
-    changeX=x1-x2;
-    return changeX/changeT;
+    changeX=x2 -x1;
+    return changeX/t;
 }
 
     /**
@@ -30,8 +27,8 @@ public class Physics extends MyMath {
     public double acceleration(double v1,double v2, double t1, double t2){
     double changeV;
     double changeT;
-    changeT=t1-t2;
-    changeV=v1-v2;
+    changeT=t2 - t1;
+    changeV=v2 - v1;
     return changeV/changeT;
 }
 
@@ -39,11 +36,12 @@ public class Physics extends MyMath {
      * will solve for the force of the object
      * @param m1 the first mass
      * @param m2 and the mass 2
+     *           @param  r the distance between the 2 objects
      * @return will return teh force appied
      */
-    public double force(double m1, double m2){
-    double G=6.672*bc.exponents(10,-8);
-    double r2=15673681;
+    public double force(double m1, double m2,double r){
+    double G=6.672*bc.exponents(10,-11);
+    double r2= r * r;
 
     return (G*m1*m2)/r2;
 }

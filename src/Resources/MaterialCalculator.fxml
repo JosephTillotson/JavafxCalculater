@@ -265,7 +265,7 @@
                                     <Font size="36.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton onAction="#Fclick" prefHeight="293.0" prefWidth="266.0" text="Force" textFill="WHITE" GridPane.columnIndex="2">
+                              <JFXButton onAction="#Fclick" prefHeight="293.0" prefWidth="266.0" text="Force of Gravity" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.columnIndex="2">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
@@ -366,6 +366,11 @@
                                           <Font size="34.0" />
                                        </font>
                                     </JFXButton>
+                                    <JFXButton onAction="#QClick" prefHeight="619.0" prefWidth="267.0" text="Quadratic" textFill="WHITE" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </JFXButton>
                                  </children>
                                  <columnConstraints>
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -373,6 +378,7 @@
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                  </columnConstraints>
                                  <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
