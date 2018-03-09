@@ -700,7 +700,7 @@ input.setText(String.valueOf(ans));
                 input.setText(String.valueOf(system));
                 String oldPrompt = prompt.getText();
                 prompt.setText(oldPrompt + value);
-                save(system, fnumber, snumber);
+                save(fnumber+"+"+snumber+"="+system);
                 break;
             case "-":
                 String valuesub = input.getText();
@@ -709,7 +709,7 @@ input.setText(String.valueOf(ans));
                 input.setText(String.valueOf(systemsub));
                 String oldPromptsub = prompt.getText();
                 prompt.setText(oldPromptsub + valuesub);
-                save(systemsub, fnumber, snumber);
+                save(fnumber+"-"+snumber+"="+systemsub);
                 break;
             case "x":
                 String valuemul = input.getText();
@@ -718,7 +718,7 @@ input.setText(String.valueOf(ans));
                 input.setText(String.valueOf(systemmul));
                 String oldPromptmul = prompt.getText();
                 prompt.setText(oldPromptmul + valuemul);
-                save(systemmul, fnumber, snumber);
+                save(fnumber+"*"+snumber+"="+systemmul);
                 break;
             case "/":
                 String valuediv = input.getText();
@@ -730,7 +730,7 @@ input.setText(String.valueOf(ans));
                     input.setText(String.valueOf(systemdiv));
                 String oldPromptdiv = prompt.getText();
                 prompt.setText(oldPromptdiv + valuediv);
-                save(systemdiv, fnumber, snumber);
+                save(fnumber+"/"+snumber+"="+systemdiv);
                 break;
             case "^":
                 String valuecar = input.getText();
@@ -739,7 +739,7 @@ input.setText(String.valueOf(ans));
                 input.setText(String.valueOf(systemcar));
                 String oldPromptcar = prompt.getText();
                 prompt.setText(oldPromptcar + valuecar);
-                save(systemcar, fnumber, snumber);
+                save(fnumber+"^"+snumber+"="+systemcar);
                 break;
 
 
@@ -755,9 +755,9 @@ input.setText(String.valueOf(ans));
         this.snumber = 0;
     }
 
-    private void save(double answer, double x, double y) {
+    private void save(String x) {
         try (PrintWriter out = new PrintWriter("filename.txt")) {
-            out.println(x + "+" + y + "=" + answer);
+            out.println(x );
         } catch (FileNotFoundException e) {
             //
         }
