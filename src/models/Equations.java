@@ -2,6 +2,9 @@ package models;
 
 import Exceptions.ImagenaryNumberException;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
 public class Equations {
 
    private BasicCalculater bc=new BasicCalculater();
@@ -16,8 +19,9 @@ public class Equations {
      * @return return the answer
      */
     public double standardeq(double a, double x, double b, double y){
-
-        return (a*x)+(b*y);
+        double answer=(a*x)+(b*y);
+        save("("+a+"*"+x+") + ("+b+"*"+y+") = "+answer);
+        return answer;
     }
 
     /**
@@ -28,7 +32,9 @@ public class Equations {
      * @return return the answer
      */
     public double slopeIntercept(double m, double x, double b){
-        return m*x+b;
+        double answer=m*x+b;
+        save(m+"*"+x+"+"+b+" = "+answer);
+        return answer;
     }
 
     /**
@@ -40,7 +46,9 @@ public class Equations {
      * @return will return the slope
      */
     public double slope(double y2, double y1, double x2, double x1){
-        return (y2-y1)/(x2-x1);
+        double answer =(y2-y1)/(x2-x1);
+        save("("+y2+"-"+y1+") / ("+x2+"-"+x1+") = "+answer);
+        return answer;
     }
 
     /**
@@ -60,7 +68,9 @@ public class Equations {
         yanswer=y2-y1;
         yanswer=bc.exponents(yanswer, 2);
         answer=xanswer+yanswer;
-        return sc.squareroot(answer);
+        double finalanswer=sc.squareroot(answer);
+        save("√(("+x2+"-"+x1+")+("+y2+"-"+y1+"))"+" = "+"√("+xanswer+"+"+yanswer+") = "+"√("+answer+") = "+finalanswer);
+        return finalanswer;
     }
 
     /**
@@ -72,7 +82,9 @@ public class Equations {
      * @return will return the midpoint
      */
     public String midpointFormula(double x1, double x2, double y1, double y2){
-        return "("+(x1+x2)/2+","+(y1+y2)/2+")";
+        String answer="("+(x1+x2)/2+","+(y1+y2)/2+")";
+        save("( ("+x1+"+"+x2+")/2 , ("+y1+"+"+y2+")/2  ) = "+answer);
+        return answer;
     }
 
     /**
@@ -84,16 +96,19 @@ public class Equations {
      */
     public double[] QuadraticFormula(double a,double b, double c){
         double[] answer= new double[2];
+        double square1;
         double square;
         double plus;
         double minus;
-        square= bc.exponents(b,2)-4*a*c;
-        if (square<0){
+        square1= bc.exponents(b,2)-(4*a*c);
+        if (square1<0){
             throw new ImagenaryNumberException("cant squareroot a imagenary number");
         }
-        square=sc.squareroot(square);
+        double a2=2*a;
+        square=sc.squareroot(square1);
         answer[0]=(-b+square)/(2*a);
         answer[1]=(-b-square)/(2*a);
+        save(-b+"+/-"+"√( "+b+"^2 - 4*"+a+"*"+c+")/("+"2*"+a+") = "+-b+"+/-"+"√( "+square1+") / "+a2+" = "+-b+"+"+square+"/"+a2+" = "+answer[0]+-b+"-"+square+"/"+a2+" = "+answer[1]);
         return answer;
     }
 
@@ -109,11 +124,22 @@ public class Equations {
         double square;
         double square1;
         double answer;
+        double square2;
+        double square12;
         square= x-h;
-        square=bc.exponents(square,2);
+        square2=bc.exponents(square,2);
         square1=y-k;
-        square1=bc.exponents(square1,2);
-        answer=square+square1;
-        return sc.squareroot(answer);
+        square12=bc.exponents(square1,2);
+        answer=square2+square12;
+        double answerfinal=sc.squareroot(answer);
+        save("√( ("+x+"-"+h+")^2+("+y+"-"+k+")^2 )"+" = "+"√( "+square+"^2"+square1+"^2 ) = √( "+square2+"+"+square12+" ) = √( "+answer+" ) = "+answerfinal);
+        return answerfinal;
+    }
+    private void save(String answer) {
+        try (PrintWriter out = new PrintWriter("filename.txt")) {
+            out.println(answer);
+        } catch (FileNotFoundException e) {
+            //
+        }
     }
 }

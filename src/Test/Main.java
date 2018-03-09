@@ -7,7 +7,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import models.BasicCalculater;
-import models.Calc;
 import models.Equations;
 import models.Schientific;
 
@@ -24,8 +23,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Calc c = new Calc();
-        c.drive("2x^3+23x-3");
+
 
 
         //launch(args);

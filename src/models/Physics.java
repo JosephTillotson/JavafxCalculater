@@ -1,5 +1,8 @@
 package models;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
 public class Physics extends MyMath {
     BasicCalculater bc=new BasicCalculater();
 
@@ -13,7 +16,9 @@ public class Physics extends MyMath {
     public double velocity(double x1, double x2,double t){
     double changeX;
     changeX=x2 -x1;
-    return changeX/t;
+    double answer=changeX/t;
+    save("(+"+x2+"-"+x1+")"+"/"+t+"="+answer);
+    return answer;
 }
 
     /**
@@ -29,7 +34,9 @@ public class Physics extends MyMath {
     double changeT;
     changeT=t2 - t1;
     changeV=v2 - v1;
-    return changeV/changeT;
+    double answer= changeV/changeT;
+    save("("+t2+"-"+t1+")"+" / ("+v2+"-"+v1+") = "+changeV+" / " +changeT+" = "+answer);
+    return answer;
 }
 
     /**
@@ -42,8 +49,9 @@ public class Physics extends MyMath {
     public double force(double m1, double m2,double r){
     double G=6.672*bc.exponents(10,-11);
     double r2= r * r;
-
-    return (G*m1*m2)/r2;
+    double answer=(G*m1*m2)/r2;
+save("( "+m1+"*"+m2+"*"+G+") / "+r+"^2 = "+m1*m2*G+" / "+r2+" = "+answer);
+    return answer;
 }
 
     /**
@@ -53,8 +61,10 @@ public class Physics extends MyMath {
      * @return the value of work
      */
     public double work(double force,  double distance){
+        double answer=force*distance;
+        save(force+"*"+distance+" = "+answer);
 
-    return force*distance;
+    return answer;
 }
 
     /**
@@ -64,7 +74,9 @@ public class Physics extends MyMath {
      * @return the energy final
      */
     public double ef(double ei, double work){
-    return ei+work;
+        double answer=ei+work;
+        save(ei+"+"+work+" = "+answer);
+    return answer;
 }
 
     /**
@@ -74,7 +86,9 @@ public class Physics extends MyMath {
      * @return the value of Kenetic energy
      */
     public double KE(double mass, double velocity){
-    return .5*mass*velocity;
+        double answer=.5*mass*velocity;
+        save(.5+"*"+mass+"*"+velocity+" = "+answer);
+    return answer;
 }
 
     /**
@@ -84,8 +98,10 @@ public class Physics extends MyMath {
      * @return the value of lthe potential energy
      */
     public double PEG(double mass,double height){
-    double g=6.67*bc.exponents(10,-11);
-    return mass*g*height;
+        double g=6.67*bc.exponents(10,-11);
+        double answer=mass*g*height;
+    save(mass+"*"+g+"*"+height+" = "+answer);
+    return answer;
 }
 
     /**
@@ -95,7 +111,9 @@ public class Physics extends MyMath {
      * @return the value of f
      */
     public double pf(double Pi, double inpulse){
-    return Pi+inpulse;
+        double answer=Pi+inpulse;
+        save(Pi+"+"+inpulse+" = "+answer);
+    return answer;
 }
 
     /**
@@ -105,7 +123,9 @@ public class Physics extends MyMath {
      * @return the value of p
      */
     public double P(double mass, double Veloccity){
-    return mass*Veloccity;
+        double answer = mass * Veloccity;
+        save(mass+"*"+Veloccity+" = "+answer);
+    return answer;
 }
 
     /**
@@ -115,7 +135,9 @@ public class Physics extends MyMath {
      * @return the value for impulse
      */
     public double impulse(double force, double time){
-    return force*time;
+        double answer = force*time;
+        save(force+"*"+time+" = "+answer);
+    return answer;
 }
 
     /**
@@ -125,8 +147,18 @@ public class Physics extends MyMath {
      * @return the value of power
      */
     public double power(double work, double time){
-    return work/time;
+        double answer=work/time;
+        save(work+"/"+time+" = "+answer);
+    return answer;
 }
+
+    private void save(String answer) {
+        try (PrintWriter out = new PrintWriter("filename.txt")) {
+            out.println(answer);
+        } catch (FileNotFoundException e) {
+            //
+        }
+    }
 
 
 }
